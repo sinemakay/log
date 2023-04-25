@@ -5,10 +5,9 @@ $username = "root";
 $password = "";
 $dbname = "loglama";
 
-// MySQL bağlantısı oluşturma
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Bağlantı kontrolü
 if ($conn->connect_error) {
     die("Bağlantı hatası: " . $conn->connect_error);
 }
